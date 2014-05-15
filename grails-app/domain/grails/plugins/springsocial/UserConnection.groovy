@@ -43,21 +43,9 @@ class UserConnection implements Serializable {
   }
 
   static mapping = {
-    table "UserConnection"
+  
     version false
-
     id composite: ['userId', 'providerId', 'providerUserId']
 
-    userId column: 'userId'
-    providerId column: 'providerId'
-    providerUserId column: 'providerUserId'
-    displayName column: 'displayName'
-    profileUrl column: 'profileUrl'
-    imageUrl column: 'imageUrl'
-    accessToken column: 'accessToken'
-    secret column: 'secret'
-    refreshToken column: 'refreshToken'
-    rank column: 'rank'
-    expireTime column: 'expireTime'
   }
 }
