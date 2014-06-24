@@ -72,6 +72,7 @@ grails.project.dependency.resolution = {
     def springSocialVersion = "1.1.0.RELEASE"
 
     compile("org.springframework.social:spring-social-core:${springSocialVersion}") { transitive = false }
+    compile("org.springframework.social:spring-social-config:${springSocialVersion}") { transitive = false }
     compile("org.springframework.social:spring-social-web:${springSocialVersion}") { transitive = false }
 
     compile("org.springframework.security:spring-security-crypto:3.1.4.RELEASE") { transitive = false }
