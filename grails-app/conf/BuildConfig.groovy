@@ -66,12 +66,13 @@ grails.project.dependency.resolution = {
     mavenRepo "http://repo.sindica.to/nexus/content/repositories/public-milestones/"
   }
 
-  def gebVersion = "0.9.3-SNAPSHOT"
+  def gebVersion = "0.9.3"
 
   dependencies {
     def springSocialVersion = "1.1.0.RELEASE"
 
     compile("org.springframework.social:spring-social-core:${springSocialVersion}") { transitive = false }
+    compile("org.springframework.social:spring-social-config:${springSocialVersion}") { transitive = false }
     compile("org.springframework.social:spring-social-web:${springSocialVersion}") { transitive = false }
 
     compile("org.springframework.security:spring-security-crypto:3.1.4.RELEASE") { transitive = false }
@@ -87,7 +88,7 @@ grails.project.dependency.resolution = {
       export = false
     }
     compile(":spring-security-core:2.0-RC2")
-    compile ":platform-core:1.0.RC6"
+    compile ":platform-core:1.0.0"
     compile(":hibernate:3.6.10.11") {
       export = false
     }
